@@ -107,4 +107,21 @@ snippet uuid "Random UUID" w
 `!p if not snip.c: import uuid; snip.rv = uuid.uuid4()`
 endsnippet
 
+##################
+#  User-created  #
+##################
+snippet { "Autocomplete braces" i
+{
+	${0:${VISUAL:Content}}
+}
+endsnippet
+
+snippet ( "Autocomplete parentheses" i
+(${1:${VISUAL:Content}})${0}
+endsnippet
+
+snippet [ "Autocomplete brackets" i
+[${1:${VISUAL:Content}}]${0}
+endsnippet
+
 # vim:ft=snippets:
